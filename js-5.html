@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script >
+	let ab,bc,cd,ad;
+	function isRectangle(ax,ay,bx,by,cx,cy,dx,dy)  { 
+		ab = Math.sqrt(Math.pow((bx-ax),2))+(Math.pow((by-ay),2));
+		bc = Math.sqrt(Math.pow((cx-bx),2))+(Math.pow((cy-by),2));
+		cd = Math.sqrt(Math.pow((dx-cx),2))+(Math.pow((dy-cy),2));
+		ad = Math.sqrt(Math.pow((ax-dx),2))+(Math.pow((ay-dy),2));
+
+		if((ab == cd)&&(bc == ad)){ alert('Бул фигура - тиктортбурыш! ^-^');}
+		else alert('Бул фигура тиктортбурыш емес ;(');
+
+	}
+
+	isRectangle(2,4,8,4,8,2,2,2);
+	isRectangle(2,4,8,4,8,4,2,3);
+		
+</script>
